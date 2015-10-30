@@ -1,0 +1,15 @@
+
+apply plugin: "com.android.model.application"
+
+dependencies {
+    compile project(path: ":lib", configuration: "freeDebug")
+
+}
+
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.1"
+    }
+}
+

@@ -1,0 +1,18 @@
+
+apply plugin: "com.android.model.library"
+
+configurations {
+    freeDebug
+}
+
+model {
+    android {
+        compileSdkVersion = 23
+        buildToolsVersion = "23.0.1"
+        publishNonDefault = true
+    }
+    android.productFlavors {
+        create("free")
+        create("premium")
+    }
+}
